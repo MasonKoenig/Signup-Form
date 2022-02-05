@@ -37,7 +37,41 @@
       </div>
       <div class="form">
         <h2>Let's do this!</h2>
-        <!-- Insert the form fields -->
+        <form action="example.com/path" method="post">
+          <div>
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" id="firstName" name="first_name" />
+          </div>
+          <div>
+            <label for="lastName">LAST NAME</label>
+            <input type="text" id="firstName" name="last_name" />
+          </div>
+          <div>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div>
+            <label for="phone_number">PHONE NUMBER</label>
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phone_number"
+              pattern="(\d{3}[\-]\d{3}[\-]\d{4})"
+            />
+          </div>
+          <div>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" />
+          </div>
+          <div>
+            <label for="confirm_password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirm_password"
+            />
+          </div>
+        </form>
       </div>
       <div class="controls">
         <button>Create Account</button>
